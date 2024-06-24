@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registeration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+        }
+        input{
+                display:inline-block;
+                margin: 10px;               
+                }
+
+                button{
+                    display:inline-block;                                                                                       
+                    margin: 10px;
+                    
+                }
+    </style>
 </head>
 <body>
     <form>
@@ -11,32 +27,35 @@
         <input type="text" id="username">
         <br>
         <label for="email">Email</label>
-        <input type="email">
+        <input type="email" id="email">
         <br>
-        <label for="">password</label>
-        <input type="password">
+        <label for="password">password</label>
+        <input type="password" id="password">
         <br>
-        <label for="">Confirm Password</label>
-        <input type="password">
+        <label for="cpassword">Confirm Password</label>
+        <input type="cpassword" id="cpassword">
         <br>
-        <label for="">Gender</label>
-        <input type="radio" name="gender" id="">Male
-        <input type="radio" name="gender" id="">Female
-        <input type="radio" name="gender" id="">No to Say
-
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="" value="Male">Male
+        <input type="radio" name="gender" id="" value="Female">Female
+        <input type="radio" name="gender" id="" value="No to Say">No to Say
         <br>
-        <label for="">Languages</label>
-        <input type="checkbox" name="language" >Tamil
-        <input type="checkbox" name="language" >English
-        <input type="checkbox" name="language" >Hindhi
         <br>
-        <label for="">select your country</label>
+        <label for="language">Languages</label>
+        <input type="checkbox" name="language" value="Tamil" >Tamil
+        <input type="checkbox" name="language" value="English" >English
+        <input type="checkbox" name="language" value="Hindhi ">Hindhi
+        <br>
+        <br>
+        <label for="country">select your country</label>
         <select name="country">
             <option value="india">India</option> 
-            <option value="india">USA</option> 
-            <option value="india">UK</option> 
-
+            <option value="USA">USA</option> 
+            <option value="UK">UK</option> 
+            
         </select>
+        <br>
+        <br>
         <input type="submit">
     </form>
 </body>
